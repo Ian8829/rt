@@ -1,0 +1,55 @@
+/* Element styles */
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ItemMenu */
+.itemMenu {
+}
+
+.itemIndex {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemIndex > li {
+  margin: 2px;
+}
+
+.itemSorting {
+  justify-content: flex-end;
+}
+
+
+/* Item List */
+
+.itemList {
+  margin: 10px 20px;
+}
+
+.itemDirection {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-size: 13px;
+}
+
+.itemPhoto {
+  height: 130px;
+}
+
+
+
