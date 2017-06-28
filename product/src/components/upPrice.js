@@ -11,17 +11,19 @@ class upPrice extends Component {
   }
 
   upPriceSorting() {
+    const mapItems = item => {
+      return (
+        <li key={item.id}>
+          <img src={item.img_src} className="itemPhoto"/>
+          <h3>{item.title}</h3>
+          <p>{item.price}</p>
+        </li>
+      );
+    };
+
     return this.props.items
       .sort((a, b) => a.price - b.price)
-      .map(item => {
-        return (
-          <li key={item.id}>
-            <img src={item.img_src} className="itemPhoto"/>
-            <h3>{item.title}</h3>
-            <p>{item.price}</p>
-          </li>
-        );
-      });
+      .map(mapItems);
   }
 
 

@@ -26,14 +26,19 @@ class ItemList extends Component {
     };
 
     const { order } = this.state;
+    const { items } = this.props;
 
     if (order === 'up') {
-      return this.props.items
+      return items
         .sort((a, b) => a.price - b.price)
         .map(renderListItem);
     } else if (order === 'down') {
-      return this.props.items
+      return items
         .sort((a, b) => b.price - a.price)
+        .map(renderListItem);
+    } else if (order === 'alphabet') {
+      return items
+        .sort((a, b) => a.title.localeCompare(b.title))
         .map(renderListItem);
     }
     return this.props.items.map(renderListItem);
@@ -48,6 +53,9 @@ class ItemList extends Component {
           </button>
           <button onClick={() => this.setState({ order: 'up' })}>
             Price up
+          </button>
+          <button onClick={() => this.setState({ order: 'alphabet' })}>
+            alphabet
           </button>
         </div>
         <ul className="itemDirection">
