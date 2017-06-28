@@ -20,7 +20,7 @@ class ItemList extends Component {
         <li key={item.id}>
           <img src={item.img_src} className="itemPhoto"/>
           <h3>{item.title}</h3>
-          <p>{item.price}</p>
+          <p>₩ {item.price}</p>
         </li>
       );
     };

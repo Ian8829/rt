@@ -1,73 +1,73 @@
 export default function() {
   return [
     {
-      title: 'Javascript: The Good Parts',
+      title: '가나',
       price: 103,
       id: "item1",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Harry Potter',
+      title: '놀이터',
       price: 39,
       id: "item2",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'The Dark Tower',
+      title: '다람쥐',
       price: 55,
       id: "item3",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Eloquent Ruby',
+      title: '로컬',
       price: 33,
       id: "item4",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Eloquent',
+      title: '마늘',
       price: 53,
       id: "item5",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Saphire',
+      title: '박완규',
       price: 43,
       id: "item6",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Blue Ruby',
+      title: '소나무',
       price: 63,
       id: "item7",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Black Diamond',
+      title: '오',
       price: 73,
       id: "item8",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Blue Ray',
+      title: '봉창',
       price: 77,
       id: "item9",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Black Sun',
+      title: '똑딱',
       price: 88,
       id: "item10",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Yellow Ruby',
+      title: '리액트',
       price: 92,
       id: "item11",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
     },
     {
-      title: 'Purple Diamond',
+      title: '퐁',
       price: 103,
       id: "item12",
       img_src: "http://treehouse-code-samples.s3.amazonaws.com/bootstrap-4/img/angie.png"
