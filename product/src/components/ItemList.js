@@ -1,26 +1,30 @@
 import React, {Component} from 'react';
-import { selectItem } from '../actions/index';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+
+import { fetchItems } from '../actions/index';
 
 class ItemList extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      order: 'none'
+      order: 'none',
+      // term: ''
     };
 
     this.renderItem = this.renderItem.bind(this);
   }
 
   renderItem() {
-    const renderListItem = item => {
+    const renderListItem = (request) => {
+      const { seq, brand, thumb_image_url, name, price } = request.result.product_infos;
+
       return (
-        <li key={item.id}>
-          <img src={item.img_src} className="itemPhoto"/>
-          <h3>{item.title}</h3>
-          <p>₩ {item.price}</p>
+        <li key={seq}>
+          <img src={thumb_image_url} className="itemPhoto"/>
+          <h3>{brand} {name}</h3>
+          <p>₩ {price}</p>
         </li>
       );
     };
@@ -38,7 +42,7 @@ class ItemList extends Component {
         .map(renderListItem);
     } else if (order === 'alphabet') {
       return items
-        .sort((a, b) => a.title.localeCompare(b.title))
+        .sort((a, b) => a.name.localeCompare(b.name))
         .map(renderListItem);
     }
     return this.props.items.map(renderListItem);
@@ -73,7 +77,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({selectItem}, dispatch)
+  return bindActionCreators({fetchItems}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ItemList);

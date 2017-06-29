@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
-import itemAll from './itemAll';
-import ActiveItem from './activeItem';
+import activeItem from './activeItem';
 
 const rootReducer = combineReducers({
-  items: itemAll,
-  activeItem: ActiveItem
+  items: activeItem,
 });
 
 export default rootReducer;
