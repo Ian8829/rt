@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  background: #f7f7f7;
 }
 
 .App {
@@ -17,8 +18,6 @@ a {
 }
 
 /* ItemMenu */
-.itemMenu {
-}
 
 .itemIndex {
   display: flex;
@@ -26,29 +25,53 @@ a {
 }
 
 .itemIndex > li {
-  margin: 2px;
+  margin: 0;
 }
 
 .itemSorting {
   justify-content: flex-end;
 }
 
+/* Item Index */
+.itemIndex {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cccccc;
+}
 
 /* Item List */
 
 .itemList {
-  margin: 10px 20px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .itemDirection {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  font-size: 13px;
+  justify-content: flex-start;
+  font-size: 10px;
+  padding: 0;
 }
 
 .itemPhoto {
-  height: 130px;
+  height: 180px;
+}
+
+.itemSet {
+  background: white;
+  width: 200px;
+  border: 1px solid #dadada;
+}
+
+.itemSet > p, h4 {
+  background: white;
+}
+
+.itemSet > p {
+  color: red;
 }
 
 

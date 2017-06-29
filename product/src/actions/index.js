@@ -13,11 +13,18 @@ export function fetchItems() {
   const formData = {
     auth_token: AUTH_TOKEN,
     page: 0,
-    page_count: 1000
+    page_count: 10000
   };
 
+  const data = new FormData();
+  data.auth_token = AUTH_TOKEN;
+  data.page = 0;
+  data.page_count = 10000;
+
   return function(dispatch) {
-    axios.post(`${baseURL}/api/product/index`, qs.stringify({formData}))
+    axios.post(`${baseURL}/api/product/index`, qs.stringify({formData}), {
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    })
       .then(response => {
         console.log('response', response);
 

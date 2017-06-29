@@ -28,9 +28,9 @@ class ItemList extends Component {
       const { seq, brand, thumb_image_url, name, price } = item;
 
       return (
-        <li key={seq}>
+        <li key={seq} className="itemSet">
           <img src={thumb_image_url} className="itemPhoto"/>
-          <h3>{brand} {name}</h3>
+          <h4>{brand} {name}</h4>
           <p>₩ {price}</p>
         </li>
       );
