@@ -10,15 +10,20 @@ class ItemList extends Component {
 
     this.state = {
       order: 'none',
-      // term: ''
     };
+
+
 
     this.renderItem = this.renderItem.bind(this);
   }
 
+  componentWillMount() {
+    this.props.fetchItems();
+  }
+
   renderItem() {
-    const renderListItem = (request) => {
-      const { seq, brand, thumb_image_url, name, price } = request.result.product_infos;
+    const renderListItem = request => {
+      const { seq, brand, thumb_image_url, name, price } = request.data.result.product_infos;
 
       return (
         <li key={seq}>
@@ -45,7 +50,7 @@ class ItemList extends Component {
         .sort((a, b) => a.name.localeCompare(b.name))
         .map(renderListItem);
     }
-    return this.props.items.map(renderListItem);
+    return items.map(renderListItem);
   }
 
   render() {
