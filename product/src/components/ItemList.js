@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
+
 import { fetchItems } from '../actions/index';
 
 class ItemList extends Component {
@@ -9,10 +10,8 @@ class ItemList extends Component {
     super(props);
 
     this.state = {
-      order: 'none',
+      order: 'none'
     };
-
-
 
     this.renderItem = this.renderItem.bind(this);
   }
@@ -22,8 +21,11 @@ class ItemList extends Component {
   }
 
   renderItem() {
-    const renderListItem = request => {
-      const { seq, brand, thumb_image_url, name, price } = request.data.result.product_infos;
+    const { order } = this.state;
+    const { items } = this.props;
+
+    const renderListItem = (item) => {
+      const { seq, brand, thumb_image_url, name, price } = item;
 
       return (
         <li key={seq}>
@@ -33,9 +35,6 @@ class ItemList extends Component {
         </li>
       );
     };
-
-    const { order } = this.state;
-    const { items } = this.props;
 
     if (order === 'up') {
       return items
@@ -57,7 +56,7 @@ class ItemList extends Component {
     return(
       <div className="itemList">
         <div className="itemIndex">
-          <button onClick={() => this.setState({ order: 'down' })}>
+          <button onClick={() => this.setState({ order: 'down' }) }>
             Price down
           </button>
           <button onClick={() => this.setState({ order: 'up' })}>

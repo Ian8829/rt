@@ -20,6 +20,7 @@ export function fetchItems() {
     axios.post(`${baseURL}/api/product/index`, qs.stringify({formData}))
       .then(response => {
         console.log('response', response);
+
         dispatch({
           type: FETCH_ITEMS,
           payload: response.data
@@ -27,9 +28,12 @@ export function fetchItems() {
       })
       .catch(error => {
         console.log(error);
-      })
+      });
+
   }
+
 }
+
 
 // const url = `http://r2u.skoopmedia.co.kr/api/product/index`;
 // const formData = {
