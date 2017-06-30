@@ -30,8 +30,8 @@ class ItemList extends Component {
       return (
         <li key={seq} className="itemSet">
           <img src={thumb_image_url} className="itemPhoto"/>
-          <h4>{brand} {name}</h4>
-          <p>₩ {price}</p>
+          <p className="itemName">{brand} {name}</p>
+          <p className="itemPrice">₩ {price}</p>
         </li>
       );
     };
@@ -56,19 +56,21 @@ class ItemList extends Component {
     return(
       <div className="itemList">
         <div className="itemIndex">
-          <button onClick={() => this.setState({ order: 'down' }) }>
-            Price down
-          </button>
-          <button onClick={() => this.setState({ order: 'up' })}>
-            Price up
-          </button>
-          <button onClick={() => this.setState({ order: 'alphabet' })}>
-            alphabet
-          </button>
+          <a onClick={() => this.setState({ order: 'down' }) }>
+            정렬기준: 가격 ▽
+          </a>
+          <a onClick={() => this.setState({ order: 'up' })}>
+            정렬기준: 가격 △
+          </a>
+          <a onClick={() => this.setState({ order: 'alphabet' })}>
+            정렬기준: 상품명
+          </a>
         </div>
-        <ul className="itemDirection">
-          {this.renderItem()}
-        </ul>
+        <div>
+          <ul className="itemDirection">
+            {this.renderItem()}
+          </ul>
+        </div>
       </div>
     );
   }
