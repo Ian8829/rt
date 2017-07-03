@@ -46,7 +46,7 @@ class ItemList extends Component {
         .map(renderListItem);
     } else if (order === 'alphabet') {
       return items
-        .sort((a, b) => a.name.localeCompare(b.name))
+        .sort((a, b) => a.brand.localeCompare(b.brand))
         .map(renderListItem);
     }
     return items.map(renderListItem);
