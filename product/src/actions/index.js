@@ -13,11 +13,11 @@ export const FETCH_ITEMS = 'FETCH_ITEMS';
 
 
 export function fetchItems() {
-  // const requestUid = {
-  //   model_name: 'iPhone',
-  //   platform: 1,
-  //   os_ver: 7
-  // };
+  const requestUid = {
+      model_name: 'iPhone',
+      platform: 1,
+      os_ver: 7
+  };
 
   const formData = {
     auth_token: '',
@@ -28,7 +28,7 @@ export function fetchItems() {
 
   const data = new FormData();
   data.auth_token = '';
-  data.model_name = 'iPhone';
+  data.model_name = 'i';
   data.platform = 1;
   data.os_ver = 7;
   data.page = 0;
@@ -36,12 +36,7 @@ export function fetchItems() {
 
   return function(dispatch) {
 
-    axios.post(`${baseURL}/api/device/create`, qs.stringify({
-        model_name: 'iPhone',
-        platform: 1,
-        os_ver: 7
-      })
-    )
+    axios.post(`${baseURL}/api/device/create`, qs.stringify(requestUid))
       .then(response => {
         const {auth_token} = response.data.result;
         console.log('response1', auth_token);
@@ -52,7 +47,7 @@ export function fetchItems() {
 
 
     axios.post(`${baseURL}/api/product/index`,
-      qs.stringify({formData}),
+      qs.stringify(formData),
       { headers: { 'Content-Type': 'application/x-www-form-urlencoded' }}
     )
       .then(response => {
