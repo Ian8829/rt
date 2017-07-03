@@ -35,7 +35,6 @@ export function fetchItems() {
   data.page_count = 10000;
 
   return function(dispatch) {
-
     axios.post(`${baseURL}/api/device/create`, qs.stringify({
         model_name: 'iPhone',
         platform: 1,
@@ -43,29 +42,28 @@ export function fetchItems() {
       })
     )
       .then(response => {
-        const {auth_token} = response.data.result;
-        console.log('response1', auth_token);
+        console.log('response1', response.data.result.auth_token);
       })
       .catch(error => {
         console.log(error);
       });
 
 
-    axios.post(`${baseURL}/api/product/index`,
-      qs.stringify({formData}),
-      { headers: { 'Content-Type': 'application/x-www-form-urlencoded' }}
-    )
-      .then(response => {
-        console.log('response2', response);
-
-        dispatch({
-          type: FETCH_ITEMS,
-          payload: response.data
-        });
-      })
-      .catch(error => {
-        console.log(error);
-      });
+    // axios.post(`${baseURL}/api/product/index`,
+    //   qs.stringify({formData}),
+    //   { headers: { 'Content-Type': 'application/x-www-form-urlencoded' }}
+    // )
+    //   .then(response => {
+    //     console.log('response2', response);
+    //
+    //     dispatch({
+    //       type: FETCH_ITEMS,
+    //       payload: response.data
+    //     });
+    //   })
+    //   .catch(error => {
+    //     console.log(error);
+    //   });
 
   }
 

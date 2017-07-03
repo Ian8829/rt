@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from "./components/Header";
-import ItemList from "./components/ItemList";
+import ItemList from "./components/itemList";
+import ItemHeader from './components/itemHeader'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header/>
+        <ItemHeader/>
         <ItemList/>
       </div>
     );

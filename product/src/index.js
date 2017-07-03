@@ -15,6 +15,6 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App />
   </Provider>,
-  document.getElementById('root')
+  document.getElementById('product-list')
 );
 
