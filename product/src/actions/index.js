@@ -7,7 +7,7 @@ import qs from 'qs';
 // get auth_token from node_modules
 // save token to local
 
-const baseURL = `http://r2u.skoopmedia.co.kr`;
+const baseURL = `https://r2u.skoopmedia.co.kr`;
 
 export const FETCH_ITEMS = 'FETCH_ITEMS';
 
