@@ -19,7 +19,9 @@
     text-decoration: none;
     cursor: pointer; }
   #product-list a:hover {
-    color: #cb0000; }
+    color: darkred; }
+  #product-list a:visited {
+    color: orange; }
   #product-list .headerTitle {
     font-size: 3vw;
     padding-top: 3vw; }

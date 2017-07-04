@@ -52,20 +52,19 @@ class ItemList extends Component {
     return items.map(renderListItem);
   }
 
-
-
   render() {
+
     return(
       <div className="itemList">
         <div className="itemIndex">
-          <a onClick={() => this.setState({ order: 'down' }) }>
+          <a onClick={() => this.setState({ order: 'down' })}>
             정렬기준: 가격 ▽
           </a>
           <a onClick={() => this.setState({ order: 'up' })}>
-            정렬기준: 가격 △
+            가격 △
           </a>
           <a onClick={() => this.setState({ order: 'alphabet' })}>
-            정렬기준: 상품명
+            상품명
           </a>
         </div>
         <div>

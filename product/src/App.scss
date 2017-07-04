@@ -23,8 +23,14 @@
   }
 
   a:hover {
-    color: #cb0000;
+    color: darkred;
   }
+
+  a:visited {
+    color: orange;
+  }
+
+
 
   /* itemHeader */
   .headerTitle {
