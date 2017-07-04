@@ -11,7 +11,9 @@
   #product-list .App {
     text-align: center; }
   #product-list ul {
-    list-style-type: none; }
+    list-style-type: none;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0; }
   #product-list a {
     text-decoration: none;
     cursor: pointer; }
@@ -40,8 +42,7 @@
     margin-right: 2.5%; }
   #product-list .itemDirection {
     display: flex;
-    flex-flow: row wrap;
-    padding: 0; }
+    flex-flow: row wrap; }
   #product-list .itemSet {
     background: white;
     border: 1px solid #f1f1f1;

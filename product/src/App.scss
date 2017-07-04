@@ -12,6 +12,8 @@
 
   ul {
     list-style-type: none;
+    -moz-padding-start: 0;
+    -webkit-padding-start: 0;
   }
 
   a {
@@ -65,7 +67,6 @@
   .itemDirection {
     display: flex;
     flex-flow: row wrap;
-    padding: 0;
   }
 
   .itemSet {
