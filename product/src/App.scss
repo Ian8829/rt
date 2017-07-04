@@ -26,6 +26,7 @@
   /* itemHeader */
   .headerTitle {
     font-size: 3vw;
+    padding-top: 3vw;
   }
 
   .headerContent {
@@ -61,6 +62,7 @@
     display: flex;
     flex-flow: row wrap;
     padding: 0;
+    padding-bottom: 3vw;
   }
 
   .itemSet {

@@ -18,7 +18,8 @@
   #product-list a:hover {
     color: #cb0000; }
   #product-list .headerTitle {
-    font-size: 3vw; }
+    font-size: 3vw;
+    padding-top: 3vw; }
   #product-list .headerContent {
     font-size: 1vw; }
   #product-list .itemSorting {
@@ -38,7 +39,8 @@
   #product-list .itemDirection {
     display: flex;
     flex-flow: row wrap;
-    padding: 0; }
+    padding: 0;
+    padding-bottom: 3vw; }
   #product-list .itemSet {
     background: white;
     border: 1px solid #f1f1f1;
