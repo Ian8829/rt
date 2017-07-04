@@ -42,7 +42,8 @@
     margin-right: 2.5%; }
   #product-list .itemDirection {
     display: flex;
-    flex-flow: row wrap; }
+    flex-flow: row wrap;
+    padding: 0; }
   #product-list .itemSet {
     background: white;
     border: 1px solid #f1f1f1;
