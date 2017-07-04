@@ -32,6 +32,8 @@
     padding-bottom: 1vw; }
   #product-list .itemIndex > a {
     margin-left: 1vw; }
+  #product-list .itemList {
+    padding-bottom: 2vw; }
   #product-list .itemList > div {
     width: 95%;
     margin-left: 2.5%;
@@ -39,8 +41,7 @@
   #product-list .itemDirection {
     display: flex;
     flex-flow: row wrap;
-    padding: 0;
-    padding-bottom: 3vw; }
+    padding: 0; }
   #product-list .itemSet {
     background: white;
     border: 1px solid #f1f1f1;
