@@ -6,7 +6,8 @@
   /* Item List */ }
   #product-list * {
     box-sizing: border-box;
-    background: #f7f7f7; }
+    background: #f7f7f7;
+    margin-top: 0; }
   #product-list .App {
     text-align: center; }
   #product-list ul {
