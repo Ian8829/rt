@@ -1,0 +1,142 @@
+#product-list {
+  /* Element styles */
+  * {
+    box-sizing: border-box;
+    background: #f7f7f7;
+  }
+
+  .App {
+    text-align: center;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: #cb0000;
+  }
+
+  /* itemHeader */
+  .headerTitle {
+    font-size: 3vw;
+  }
+
+  .headerContent {
+    font-size: 1vw;
+  }
+
+  /* ItemMenu */
+  .itemSorting {
+    display: flex;
+  }
+
+  /* Item Index */
+  .itemIndex {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1vw;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 1vw;
+  }
+
+  .itemIndex > a{
+    margin-left: 1vw;
+  }
+
+  /* Item List */
+  .itemList > div {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .itemDirection {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
+  .itemSet {
+    background: white;
+    border: 1px solid #f1f1f1;
+    width: 50%;
+  }
+
+  .itemPhoto {
+    width: 100%;
+  }
+
+  .itemSet > p {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0.8vw;
+    margin-bottom: 1vw;
+    background: white;
+    font-size: 1vw;
+  }
+
+  .itemName {
+    color: #393939;
+  }
+
+  .itemPrice {
+    color: red;
+  }
+
+
+  @media screen and (max-width: 767px) and (min-width: 414px) {
+    /* Item List */
+    .itemSet {
+      width: 33.3%;
+    }
+  }
+
+  @media screen and (max-width: 1023px) and (min-width: 768px) {
+    /* Item List */
+    .itemSet {
+      width: 25%;
+    }
+
+    .itemList > div {
+      width: 85%;
+      margin-left: 7.5%;
+      margin-right: 7.5%;
+    }
+  }
+
+  @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    /* Item List */
+    .itemSet {
+      width: 25%;
+    }
+
+    .itemList > div {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+
+  @media screen and (min-width: 1367px) {
+    /* Item List */
+    .itemSet {
+      width: 25%;
+    }
+
+    .itemList > div {
+      width: 70%;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+  }
+}
+
+
+
+
