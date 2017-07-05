@@ -29,7 +29,7 @@
 
   /* itemHeader */
   .headerTitle {
-    font-size: 3.5vw;
+    font-size: 4vw;
     padding-top: 3vw;
   }
 
@@ -115,6 +115,15 @@
     .itemSet > p {
       font-size: 2.1vw;
     }
+
+    /* itemHeader */
+    .headerTitle {
+      font-size: 4.2vw;
+    }
+
+    .headerContent {
+      font-size: 2.1vw;
+    }
   }
 
   @media screen and (max-width: 1023px) and (min-width: 768px) {
@@ -136,6 +145,15 @@
 
     .itemSet > p {
       font-size: 1.5vw;
+    }
+
+    /* itemHeader */
+    .headerTitle {
+      font-size: 4.4vw;
+    }
+
+    .headerContent {
+      font-size: 1.7vw;
     }
   }
 
@@ -159,6 +177,15 @@
     .itemSet > p {
       font-size: 1.2vw;
     }
+
+    /* itemHeader */
+    .headerTitle {
+      font-size: 4.6vw;
+    }
+
+    .headerContent {
+      font-size: 1.4vw;
+    }
   }
 
   @media screen and (min-width: 1367px) {
@@ -180,6 +207,15 @@
 
     .itemSet > p {
       font-size: 1.1vw;
+    }
+
+    /* itemHeader */
+    .headerTitle {
+      font-size: 4vw;
+    }
+
+    .headerContent {
+      font-size: 1.2vw;
     }
   }
 }
