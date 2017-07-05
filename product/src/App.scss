@@ -23,23 +23,18 @@
   }
 
   a:hover {
-    color: darkred;
+    color: #8b0000;
   }
-
-  a:visited {
-    color: orange;
-  }
-
 
 
   /* itemHeader */
   .headerTitle {
-    font-size: 3vw;
+    font-size: 3.5vw;
     padding-top: 3vw;
   }
 
   .headerContent {
-    font-size: 1vw;
+    font-size: 2.3vw;
   }
 
   /* ItemMenu */
@@ -58,6 +53,7 @@
 
   .itemIndex > a{
     margin-left: 1vw;
+    font-size: 1.8vw;
   }
 
   /* Item List */
@@ -92,7 +88,7 @@
     margin-left: 0.8vw;
     margin-bottom: 1vw;
     background: white;
-    font-size: 1vw;
+    font-size: 2.5vw;
   }
 
   .itemName {
@@ -105,13 +101,28 @@
 
 
   @media screen and (max-width: 767px) and (min-width: 414px) {
+
+    /* Item Index */
+    .itemIndex > a{
+      font-size: 1.6vw;
+    }
+
     /* Item List */
     .itemSet {
       width: 33.3%;
     }
+
+    .itemSet > p {
+      font-size: 2.1vw;
+    }
   }
 
   @media screen and (max-width: 1023px) and (min-width: 768px) {
+    /* Item Index */
+    .itemIndex > a{
+      font-size: 1.5vw;
+    }
+
     /* Item List */
     .itemSet {
       width: 25%;
@@ -122,9 +133,18 @@
       margin-left: 7.5%;
       margin-right: 7.5%;
     }
+
+    .itemSet > p {
+      font-size: 1.5vw;
+    }
   }
 
   @media screen and (max-width: 1366px) and (min-width: 1024px) {
+    /* Item Index */
+    .itemIndex > a{
+      font-size: 1.2vw;
+    }
+
     /* Item List */
     .itemSet {
       width: 25%;
@@ -135,9 +155,18 @@
       margin-left: 10%;
       margin-right: 10%;
     }
+
+    .itemSet > p {
+      font-size: 1.2vw;
+    }
   }
 
   @media screen and (min-width: 1367px) {
+    /* Item Index */
+    .itemIndex > a{
+      font-size: 1.1vw;
+    }
+
     /* Item List */
     .itemSet {
       width: 25%;
@@ -147,6 +176,10 @@
       width: 70%;
       margin-left: 15%;
       margin-right: 15%;
+    }
+
+    .itemSet > p {
+      font-size: 1.1vw;
     }
   }
 }

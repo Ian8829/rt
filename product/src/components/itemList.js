@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import Radium, { Style } from 'radium';
 
 
 import { fetchItems } from '../actions/index';
@@ -57,6 +58,17 @@ class ItemList extends Component {
     return(
       <div className="itemList">
         <div className="itemIndex">
+          <Style
+            scopeSelector=".ListOfLinks"
+            rules={{
+              a: {
+                color: 'black'
+              },
+              'a:visited': {
+                color: '#8b0000'
+              }
+            }}
+          />
           <a onClick={() => this.setState({ order: 'down' })}>
             정렬기준: 가격 ▽
           </a>
