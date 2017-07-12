@@ -27,7 +27,8 @@
     padding-top: 7.5vw;
     margin-bottom: 2.6vw; }
   #product-list .headerContent {
-    font-size: 2vw; }
+    font-size: 2vw;
+    line-height: 1.4em; }
   #product-list .itemSorting {
     display: flex; }
   #product-list .itemIndex {
