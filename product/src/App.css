@@ -71,7 +71,7 @@
       /* Item List */
       /* itemHeader */ }
       #product-list .itemIndex > a {
-        font-size: 1.6vw; }
+        font-size: 1.5vw; }
       #product-list .itemSet {
         width: 33.3%; }
       #product-list .itemSet > p {
@@ -86,7 +86,7 @@
       /* Item List */
       /* itemHeader */ }
       #product-list .itemIndex > a {
-        font-size: 1.5vw; }
+        font-size: 1.4vw; }
       #product-list .itemSet {
         width: 25%; }
       #product-list .itemList > div {
@@ -98,7 +98,7 @@
       #product-list .headerTitle {
         font-size: 3.4vw; }
       #product-list .headerContent {
-        font-size: 1.2vw; } }
+        font-size: 1.4vw; } }
   @media screen and (max-width: 1366px) and (min-width: 1024px) {
     #product-list {
       /* Item Index */
@@ -117,7 +117,7 @@
       #product-list .headerTitle {
         font-size: 3.6vw; }
       #product-list .headerContent {
-        font-size: 1vw; } }
+        font-size: 1.5vw; } }
   @media screen and (min-width: 1367px) {
     #product-list {
       /* Item Index */
@@ -136,6 +136,6 @@
       #product-list .headerTitle {
         font-size: 3vw; }
       #product-list .headerContent {
-        font-size: 1vw; } }
+        font-size: 1.4vw; } }
 
 /*# sourceMappingURL=App.css.map */
