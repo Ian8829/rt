@@ -2,4 +2,7 @@
 node_modules
 src/.sass-cache/*
 *.css.map
+.sass-cache
+App.css.map
+
 

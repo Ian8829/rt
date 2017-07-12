@@ -69,11 +69,14 @@ class ItemList extends Component {
               }
             }}
           />
+          <a>
+            정렬기준:
+          </a>
           <a onClick={() => this.setState({ order: 'down' })}>
-            정렬기준: 가격 ▽
+            가격 오름정렬
           </a>
           <a onClick={() => this.setState({ order: 'up' })}>
-            가격 △
+            가격 내림정렬
           </a>
           <a onClick={() => this.setState({ order: 'alphabet' })}>
             상품명
