@@ -33,13 +33,13 @@
   }
 
   .headerTitle {
-    font-size: 6.3vw;
+    font-size: 6.8vw;
     padding-top: 7.5vw;
     margin-bottom: 3.5vw;
   }
 
   .headerContent {
-    font-size: 3.4vw;
+    font-size: 4vw;
     line-height: 1.4em;
   }
 
@@ -59,7 +59,7 @@
 
   .itemIndex > a{
     margin-left: 1vw;
-    font-size: 3.1vw;
+    font-size: 3.6vw;
   }
 
   /* Item List */
@@ -111,7 +111,7 @@
 
     /* Item Index */
     .itemIndex > a{
-      font-size: 2.8vw;
+      font-size: 2.9vw;
     }
 
     /* Item List */
@@ -120,16 +120,16 @@
     }
 
     .itemSet > p {
-      font-size: 2.7vw;
+      font-size: 2.8vw;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 6.3vw;
+      font-size: 6.4vw;
     }
 
     .headerContent {
-      font-size: 3vw;
+      font-size: 3.3vw;
     }
   }
 
@@ -167,7 +167,7 @@
   @media screen and (max-width: 1365px) and (min-width: 1024px) {
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.8vw;
+      font-size: 19px;
     }
 
     /* Item List */
@@ -182,23 +182,23 @@
     }
 
     .itemSet > p {
-      font-size: 1.7vw;
+      font-size: 19px;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 5.1vw;
+      font-size: 44px;
     }
 
     .headerContent {
-      font-size: 2vw;
+      font-size: 22px;
     }
   }
 
   @media screen and (min-width: 1366px) {
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.3vw;
+      font-size: 16px;
     }
 
     /* Item List */
@@ -213,16 +213,16 @@
     }
 
     .itemSet > p {
-      font-size: 1.4vw;
+      font-size: 16px;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 4.2vw;
+      font-size: 40px;
     }
 
     .headerContent {
-      font-size: 1.8vw;
+      font-size: 18px;
     }
   }
 }

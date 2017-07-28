@@ -23,11 +23,11 @@
   #product-list .header {
     color: #333; }
   #product-list .headerTitle {
-    font-size: 6.3vw;
+    font-size: 6.8vw;
     padding-top: 7.5vw;
     margin-bottom: 3.5vw; }
   #product-list .headerContent {
-    font-size: 3.4vw;
+    font-size: 4vw;
     line-height: 1.4em; }
   #product-list .itemSorting {
     display: flex; }
@@ -39,7 +39,7 @@
     padding-bottom: 1vw; }
   #product-list .itemIndex > a {
     margin-left: 1vw;
-    font-size: 3.1vw; }
+    font-size: 3.6vw; }
   #product-list .itemList {
     padding-bottom: 2vw; }
   #product-list .itemList > div {
@@ -73,15 +73,15 @@
       /* Item List */
       /* itemHeader */ }
       #product-list .itemIndex > a {
-        font-size: 2.8vw; }
+        font-size: 2.9vw; }
       #product-list .itemSet {
         width: 33.3%; }
       #product-list .itemSet > p {
-        font-size: 2.7vw; }
+        font-size: 2.8vw; }
       #product-list .headerTitle {
-        font-size: 6.3vw; }
+        font-size: 6.4vw; }
       #product-list .headerContent {
-        font-size: 3vw; } }
+        font-size: 3.3vw; } }
   @media screen and (max-width: 1023px) and (min-width: 768px) {
     #product-list {
       /* Item Index */
@@ -107,7 +107,7 @@
       /* Item List */
       /* itemHeader */ }
       #product-list .itemIndex > a {
-        font-size: 1.8vw; }
+        font-size: 19px; }
       #product-list .itemSet {
         width: 25%; }
       #product-list .itemList > div {
@@ -115,18 +115,18 @@
         margin-left: 10%;
         margin-right: 10%; }
       #product-list .itemSet > p {
-        font-size: 1.7vw; }
+        font-size: 19px; }
       #product-list .headerTitle {
-        font-size: 5.1vw; }
+        font-size: 44px; }
       #product-list .headerContent {
-        font-size: 2vw; } }
+        font-size: 22px; } }
   @media screen and (min-width: 1366px) {
     #product-list {
       /* Item Index */
       /* Item List */
       /* itemHeader */ }
       #product-list .itemIndex > a {
-        font-size: 1.3vw; }
+        font-size: 16px; }
       #product-list .itemSet {
         width: 25%; }
       #product-list .itemList > div {
@@ -134,10 +134,10 @@
         margin-left: 15%;
         margin-right: 15%; }
       #product-list .itemSet > p {
-        font-size: 1.4vw; }
+        font-size: 16px; }
       #product-list .headerTitle {
-        font-size: 4.2vw; }
+        font-size: 40px; }
       #product-list .headerContent {
-        font-size: 1.8vw; } }
+        font-size: 18px; } }
 
 /*# sourceMappingURL=App.css.map */
