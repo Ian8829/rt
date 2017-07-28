@@ -33,13 +33,13 @@
   }
 
   .headerTitle {
-    font-size: 4vw;
+    font-size: 6.3vw;
     padding-top: 7.5vw;
-    margin-bottom: 2.6vw;
+    margin-bottom: 3.5vw;
   }
 
   .headerContent {
-    font-size: 2vw;
+    font-size: 3.4vw;
     line-height: 1.4em;
   }
 
@@ -52,14 +52,14 @@
   .itemIndex {
     display: flex;
     justify-content: flex-end;
-    font-size: 1vw;
+    font-size: 2vw;
     border-bottom: 1px solid #e8e8e8;
     padding-bottom: 1vw;
   }
 
   .itemIndex > a{
     margin-left: 1vw;
-    font-size: 1.8vw;
+    font-size: 3.1vw;
   }
 
   /* Item List */
@@ -92,9 +92,10 @@
     display: flex;
     justify-content: center;
     margin-left: 0.8vw;
+    margin-right: 0.8vw;
     margin-bottom: 1vw;
     background: white;
-    font-size: 2.5vw;
+    font-size: 3.4vw;
   }
 
   .itemName {
@@ -110,7 +111,7 @@
 
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.5vw;
+      font-size: 2.8vw;
     }
 
     /* Item List */
@@ -119,23 +120,23 @@
     }
 
     .itemSet > p {
-      font-size: 2.1vw;
+      font-size: 2.7vw;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 3.2vw;
+      font-size: 6.3vw;
     }
 
     .headerContent {
-      font-size: 1.6vw;
+      font-size: 3vw;
     }
   }
 
   @media screen and (max-width: 1023px) and (min-width: 768px) {
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.4vw;
+      font-size: 1.9vw;
     }
 
     /* Item List */
@@ -150,23 +151,23 @@
     }
 
     .itemSet > p {
-      font-size: 1.5vw;
+      font-size: 1.8vw;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 3.4vw;
+      font-size: 5.2vw;
     }
 
     .headerContent {
-      font-size: 1.4vw;
+      font-size: 2.2vw;
     }
   }
 
-  @media screen and (max-width: 1366px) and (min-width: 1024px) {
+  @media screen and (max-width: 1365px) and (min-width: 1024px) {
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.2vw;
+      font-size: 1.8vw;
     }
 
     /* Item List */
@@ -181,23 +182,23 @@
     }
 
     .itemSet > p {
-      font-size: 1.2vw;
+      font-size: 1.7vw;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 3.6vw;
+      font-size: 5.1vw;
     }
 
     .headerContent {
-      font-size: 1.5vw;
+      font-size: 2vw;
     }
   }
 
-  @media screen and (min-width: 1367px) {
+  @media screen and (min-width: 1366px) {
     /* Item Index */
     .itemIndex > a{
-      font-size: 1.1vw;
+      font-size: 1.3vw;
     }
 
     /* Item List */
@@ -212,16 +213,16 @@
     }
 
     .itemSet > p {
-      font-size: 1.1vw;
+      font-size: 1.4vw;
     }
 
     /* itemHeader */
     .headerTitle {
-      font-size: 3vw;
+      font-size: 4.2vw;
     }
 
     .headerContent {
-      font-size: 1.4vw;
+      font-size: 1.8vw;
     }
   }
 }
