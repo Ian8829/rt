@@ -57,7 +57,7 @@
     width: 100%; }
   #product-list .itemSet > p {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     margin-left: 0.8vw;
     margin-bottom: 1vw;
     background: white;

@@ -31,8 +31,8 @@ class ItemList extends Component {
       return (
         <li key={seq} className="itemSet">
           <img src={thumb_image_url} className="itemPhoto"/>
-          <p className="itemName">{brand} {name}</p>
-          <p className="itemPrice">₩ {price}</p>
+          <p className="itemName">{name}</p>
+          {/*<p className="itemPrice">₩ {price}</p>*/}
         </li>
       );
     };
@@ -72,12 +72,12 @@ class ItemList extends Component {
           <a>
             정렬기준:
           </a>
-          <a onClick={() => this.setState({ order: 'down' })}>
-            가격 높은순
-          </a>
-          <a onClick={() => this.setState({ order: 'up' })}>
-            가격 낮은순
-          </a>
+          {/*<a onClick={() => this.setState({ order: 'down' })}>*/}
+            {/*가격 높은순*/}
+          {/*</a>*/}
+          {/*<a onClick={() => this.setState({ order: 'up' })}>*/}
+            {/*가격 낮은순*/}
+          {/*</a>*/}
           <a onClick={() => this.setState({ order: 'alphabet' })}>
             상품명
           </a>
