@@ -69,18 +69,18 @@ class ItemList extends Component {
               }
             }}
           />
-          <a>
-            정렬기준:
-          </a>
+          {/*<a>*/}
+            {/*정렬기준:*/}
+          {/*</a>*/}
           {/*<a onClick={() => this.setState({ order: 'down' })}>*/}
             {/*가격 높은순*/}
           {/*</a>*/}
           {/*<a onClick={() => this.setState({ order: 'up' })}>*/}
             {/*가격 낮은순*/}
           {/*</a>*/}
-          <a onClick={() => this.setState({ order: 'alphabet' })}>
-            상품명
-          </a>
+          {/*<a onClick={() => this.setState({ order: 'alphabet' })}>*/}
+            {/*상품명*/}
+          {/*</a>*/}
         </div>
         <div>
           <ul className="itemDirection">
